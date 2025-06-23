@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tools"
+authors = [
+    {name = "Mark Sverdlov", email = "marksve039@gmail.com"},
+]
+description = "My tools"
+dependencies = [
+    "pandas",
+]
+dynamic = ["version"]
+
+[project.scripts]
+snip = "snip:main"
